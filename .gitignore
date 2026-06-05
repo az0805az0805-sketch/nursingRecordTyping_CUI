@@ -1,1 +1,8 @@
-/bin/
+# Eclipse
+.project
+.classpath
+.settings/
+
+# Build output
+bin/
+target/
