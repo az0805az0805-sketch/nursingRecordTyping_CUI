@@ -1,4 +1,6 @@
-package nursingRecordTyping.domain.model;
+package nursingRecordTyping.domain.model.entitys;
+
+import nursingRecordTyping.domain.model.type.Category;
 
 public class WordEntity {
 	private int id;
