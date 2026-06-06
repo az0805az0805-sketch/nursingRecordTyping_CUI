@@ -3,7 +3,7 @@ package nursingRecordTyping.domain.repository;
 import java.util.List;
 
 import nursingRecordTyping.appilcation.command.TextCommand;
-import nursingRecordTyping.domain.model.WordEntity;
+import nursingRecordTyping.domain.model.entitys.WordEntity;
 
 public interface NursingRecordRepository {
 	List<WordEntity> findALL();

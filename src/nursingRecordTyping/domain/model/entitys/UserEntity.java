@@ -1,18 +1,16 @@
-package nursingRecordTyping.domain.model;
-
-import java.time.LocalDate;
+package nursingRecordTyping.domain.model.entitys;
 
 public class UserEntity {
 	private int id;
 	private String username;
-	private LocalDate registerdAt;
+	private String pass;
 
-	public UserEntity(int id, String username, LocalDate registerdAt) {
+	public UserEntity(int id, String username, String pass) {
 		validateName(username);
-		validateRegisterdAt(registerdAt);
+		validatePass(pass);
 		this.id = id;
 		this.username = username;
-		this.registerdAt = registerdAt;
+		this.pass = pass;
 	}
 
 	String validateName(String name) {
@@ -22,10 +20,11 @@ public class UserEntity {
 		return name;
 	}
 
-	LocalDate validateRegisterdAt(LocalDate date) {
-		if (date == null) {
+	String validatePass(String pass) {
+
+		if (pass == null) {
 			throw new IllegalArgumentException("登録日時がnullです");
 		}
-		return date;
+		return pass;
 	}
 }

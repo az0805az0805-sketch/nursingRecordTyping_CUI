@@ -1,4 +1,4 @@
-package nursingRecordTyping.domain.model;
+package nursingRecordTyping.domain.model.entitys;
 
 import java.time.LocalDate;
 
